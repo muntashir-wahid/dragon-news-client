@@ -4,10 +4,10 @@ import NewsSummaryCard from "../../Shared/NewsSummaryCard/NewsSummaryCard";
 
 const Home = () => {
   const allNews = useLoaderData();
-  // console.log(allNews);
+
   return (
     <div>
-      <h1>Dragon news home {allNews.length}</h1>
+      <h3 className="mb-5">Welcome to Dragon News</h3>
       {allNews.map((news) => (
         <NewsSummaryCard key={news._id} news={news} />
       ))}
